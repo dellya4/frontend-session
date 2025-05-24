@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Frontend — Mental Health Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Это клиентская часть веб-приложения для оценки и отслеживания психологического состояния пользователей. Интерфейс разработан на **React** с использованием **Redux Toolkit**, **React Router**, **i18next**, и адаптивной версткой.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Основные функции
 
-### `npm start`
+- Регистрация и вход в систему
+- Психологические тесты (настроение, тревожность, стресс)
+- Страница аналитики с результатами
+- Смена темы (светлая/тёмная)
+- Многоязычная поддержка (EN / RU)
+- Панель администратора (управление пользователями и логами)
+- Загрузка и редактирование профиля
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Установка и запуск
 
-### `npm test`
+1. Убедитесь, что у вас установлен **Node.js** (рекомендуется версия 16+)
+2. Установите зависимости:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
+---
+## Запустите проект:
 
-### `npm run build`
+```
+npm run dev
+```
+или если вы используете create-react-app:
+```
+npm start
+```
+---
+## Основные зависимости
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Обязательно убедитесь, что установлены следующие библиотеки:
+```
+npm install react-router-dom
+npm install @reduxjs/toolkit react-redux
+npm install i18next react-i18next
+npm install axios
+npm install uuid
+```
+Если вы используете Vite:
+```
+npm install --save-dev vite
+```
+---
+## Многоязычность (i18n)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Проект поддерживает переводы через i18next:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Все ключи находятся в src/i18n/translation.json
+2. Язык можно переключить из профиля
+3. Переводятся: кнопки, заголовки, тесты, роли, уведомления
+---
 
-### `npm run eject`
+## Переключение тем
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Выбранная тема (light / dark) сохраняется в localStorage и в базе данных
+2. Используются CSS переменные (--bg-color, --text-color и др.)
+3. Автоматически применяется на всех страницах через data-theme на <html>
+---
+## Структура проекта
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+frontend/
+├── public/
+├── src/
+│   ├── assets/             # данные для тестов
+│   ├── components/         # все компоненты (Header, Tests, AdminPanel и т.д.)
+│   ├── pages/              # маршрутизируемые страницы
+│   ├── redux/              # store и слайсы
+│   ├── style/              # CSS-файлы
+│   ├── utils/              # вспомогательные функции
+│   └── i18n/               # файлы перевода
+├── App.jsx
+└── main.jsx
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+---
+## Защищённые маршруты
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Для ограниченного доступа реализованы обёртки:
 
-## Learn More
+1. <ProtectedRoute /> — только для авторизованных пользователей
+2. <AdminRoute /> — только для admin и superadmin
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
+## Дополнительные функции
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Результаты тестов сохраняются на сервер
+2. Аналитика по результатам тестов
+3. Аудит действий пользователей (в админ-панели)
+4. Поддержка адаптивности для всех устройств
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Примеры маршрутов
 
-### Analyzing the Bundle Size
+```
+| URL                    | Компонент        | Доступ           |
+| ---------------------- | ---------------- | ---------------- |
+| `/`                    | AboutPage        | все              |
+| `/register`            | RegisterPage     | все              |
+| `/login`               | LoginPage        | все              |
+| `/dashboard/tests`     | Tests            | авторизованные   |
+| `/dashboard/analytics` | Analytics        | авторизованные   |
+| `/test/:testId`        | Test             | авторизованные   |
+| `/admin`               | AdminPanel       | admin/superadmin |
+| `/activity`            | AdminActivityLog | admin/superadmin |
+| `/profile`             | ProfilePage      | авторизованные   |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
