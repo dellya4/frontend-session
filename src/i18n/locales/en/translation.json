@@ -1,0 +1,403 @@
+{
+    "slider": {
+        "subtitle1": "Find inner calm with scientifically-backed methods",
+        "title1": "Your daily guide to mental wellness and mindfulness",
+        "subtitle2": "Track your emotions and build healthy habits",
+        "title2": "Use Serenity to understand your mood and improve your day",
+        "subtitle3": "Join a community that cares about mental health",
+        "title3": "Explore resources, tools, and support —\nall in one place",
+        "login": "Login",
+        "sign": "Sign up"
+    },
+    "achievements": {
+        "title": "Your Achievements",
+        "step": "First Step",
+        "step_desc": "Complete your first mood check",
+        "streak": "Week Streak",
+        "streak_desc": "Check your mood for 7 days in a row",
+        "explorer": "Mindful Explorer",
+        "explorer_desc": "Try 3 different exercises",
+        "journal": "Journal Pro",
+        "journal_desc": "Write 10 journal entries",
+        "champion": "Test Champion",
+        "champion_desc": "Complete all available tests",
+        "master": "Serenity Master",
+        "master_desc": "Earn all achievements",
+        "earned": "Earned!",
+        "locked": "Locked"
+    },
+    "recommendation": {
+        "section_title": "Recommendations",
+        "button": "Start Test",
+        "happy": {
+            "title": "You're feeling joyful!",
+            "text": "You feel energetic, balanced, and positive. Minimal stress or fatigue is present."
+        },
+        "normal": {
+            "title": "You're in a stable state",
+            "text": "You feel generally balanced but may experience occasional stress or low energy."
+        },
+        "anxious": {
+            "title": "Signs of Anxiety",
+            "text": "You feel frequently stressed, worried, or overwhelmed, indicating a need for stress management."
+        },
+        "sad": {
+            "title": "Feeling Down",
+            "text": "You feel consistently tired, low, or overwhelmed, suggesting a need for more intensive support."
+        },
+        "default": {
+            "title": "Take a Mood Test",
+            "text": "Check your current emotional state with our quick test."
+        },
+        "journal": {
+            "title": "Condition Insights",
+            "text": "Track changes in your mental condition over recent few days.",
+            "button": "Open Analysis"
+        }
+    },
+    "users_activity": {
+        "title": "User activity",
+        "search_placeholder": "Search for actions...",
+        "all_roles": "All roles",
+        "username": "Username",
+        "role": "Role",
+        "action": "Action",
+        "timestamp": "Date and time"
+    },
+    "roles": {
+        "user": "User",
+        "admin": "Admin",
+        "superadmin": "Superadmin"
+    },
+    "profile": {
+        "title": "Your Profile",
+        "username": "Username",
+        "username_placeholder": "Enter your username",
+        "email": "Email",
+        "email_placeholder": "Your email",
+        "birth_date": "Date of Birth",
+        "choose_photo": "Choose Photo",
+        "upload_photo": "Upload Photo",
+        "save_changes": "Save Changes"
+    },
+    "test_titles": {
+        "mood": "Mood Assessment",
+        "anxiety": "Anxiety Level",
+        "stress": "Stress Resistance"
+    },
+    "test_questions": {
+        "mood": [
+            {
+                "question": "How do you feel right now?",
+                "options": [
+                    "Calm and balanced",
+                    "Slightly anxious",
+                    "Tired and low",
+                    "Energetic and joyful"
+                ]
+            },
+            {
+                "question": "How often have you felt stressed this week?",
+                "options": [
+                    "Almost never",
+                    "Sometimes",
+                    "Often",
+                    "Very rarely"
+                ]
+            },
+            {
+                "question": "How would you rate your sleep?",
+                "options": [
+                    "I sleep well and feel rested",
+                    "I sleep okay but wake up sometimes",
+                    "I sleep poorly and wake up often",
+                    "I sleep little but feel energetic"
+                ]
+            },
+            {
+                "question": "How do you handle daily tasks?",
+                "options": [
+                    "Easily and with enjoyment",
+                    "Sometimes with difficulty",
+                    "Often feel overwhelmed",
+                    "Quickly and efficiently"
+                ]
+            },
+            {
+                "question": "How often do you find time for yourself?",
+                "options": [
+                    "Regularly, it’s important to me",
+                    "Sometimes, when I can",
+                    "Rarely, I have little time",
+                    "I always make time"
+                ]
+            },
+            {
+                "question": "How do you react to unexpected changes?",
+                "options": [
+                    "Calmly, I adapt",
+                    "I get nervous sometimes",
+                    "I worry a lot",
+                    "With enthusiasm, I love change"
+                ]
+            },
+            {
+                "question": "How would you describe your overall mood?",
+                "options": [
+                    "Positive and stable",
+                    "It varies depending on the day",
+                    "Often sad or low",
+                    "Very joyful and optimistic"
+                ]
+            }
+        ],
+        "anxiety": [
+            {
+                "question": "Do you feel nervous for no clear reason?",
+                "options": [
+                    "Never",
+                    "Sometimes",
+                    "Often",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do your hands or body shake when you feel stressed?",
+                "options": [
+                    "Never",
+                    "Sometimes",
+                    "Often",
+                    "Very often"
+                ]
+            },
+            {
+                "question": "Do you worry about small things a lot?",
+                "options": [
+                    "No",
+                    "A little",
+                    "Yes, often",
+                    "Yes, all the time"
+                ]
+            },
+            {
+                "question": "Do you find it hard to relax even in a calm place?",
+                "options": [
+                    "Not at all",
+                    "Sometimes",
+                    "Most of the time",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do you have trouble sleeping because of worry?",
+                "options": [
+                    "Never",
+                    "Rarely",
+                    "Often",
+                    "Every night"
+                ]
+            },
+            {
+                "question": "Do you feel your heart beating fast during normal situations?",
+                "options": [
+                    "No",
+                    "Sometimes",
+                    "Often",
+                    "Very often"
+                ]
+            },
+            {
+                "question": "Do you avoid social situations because of fear or worry?",
+                "options": [
+                    "Never",
+                    "Rarely",
+                    "Often",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do you overthink decisions and fear making mistakes?",
+                "options": [
+                    "No",
+                    "A little",
+                    "Yes",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do you feel pressure in your chest when anxious?",
+                "options": [
+                    "Never",
+                    "Sometimes",
+                    "Often",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do you have sudden panic or fear without reason?",
+                "options": [
+                    "No",
+                    "Sometimes",
+                    "Often",
+                    "Very often"
+                ]
+            },
+            {
+                "question": "Do you feel like something bad will happen even if everything is fine?",
+                "options": [
+                    "Never",
+                    "Rarely",
+                    "Often",
+                    "Almost always"
+                ]
+            },
+            {
+                "question": "Do you bite your nails or tap your feet when nervous?",
+                "options": [
+                    "Never",
+                    "Sometimes",
+                    "Often",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do you feel tired after being anxious for a while?",
+                "options": [
+                    "No",
+                    "A little",
+                    "Yes",
+                    "Very much"
+                ]
+            },
+            {
+                "question": "Do you need constant reassurance from others?",
+                "options": [
+                    "No",
+                    "Sometimes",
+                    "Often",
+                    "Always"
+                ]
+            },
+            {
+                "question": "Do you feel anxious when thinking about the future?",
+                "options": [
+                    "No, I feel positive",
+                    "A bit unsure",
+                    "Yes, I worry a lot",
+                    "Yes, I feel panic about it"
+                ]
+            }
+        ],
+        "stress": [
+            {
+                "question": "How do you feel when facing a big deadline?",
+                "options": [
+                    "Focused and calm",
+                    "A bit nervous but okay",
+                    "Very stressed and tense",
+                    "Overwhelmed and lost"
+                ]
+            },
+            {
+                "question": "How well do you work under pressure?",
+                "options": [
+                    "Very well, I stay focused",
+                    "I manage most times",
+                    "I struggle a lot",
+                    "I often shut down"
+                ]
+            },
+            {
+                "question": "What do you do when something goes wrong suddenly?",
+                "options": [
+                    "Stay calm and look for solutions",
+                    "Feel tense but act anyway",
+                    "Panic a bit",
+                    "Freeze and feel helpless"
+                ]
+            },
+            {
+                "question": "How often do you feel burned out?",
+                "options": [
+                    "Almost never",
+                    "Sometimes",
+                    "Often",
+                    "All the time"
+                ]
+            },
+            {
+                "question": "Do you feel tired after a stressful day?",
+                "options": [
+                    "No, I recover fast",
+                    "A little bit",
+                    "Very tired",
+                    "Exhausted and drained"
+                ]
+            },
+            {
+                "question": "Can you focus when many things happen at once?",
+                "options": [
+                    "Yes, I stay on track",
+                    "Mostly yes",
+                    "It’s difficult",
+                    "No, I get confused"
+                ]
+            },
+            {
+                "question": "How do you handle criticism?",
+                "options": [
+                    "Calmly, I learn from it",
+                    "I feel a bit bad but move on",
+                    "I take it personally",
+                    "It ruins my day"
+                ]
+            },
+            {
+                "question": "How long does it take to calm down after stress?",
+                "options": [
+                    "Very fast",
+                    "Some minutes",
+                    "A few hours",
+                    "The whole day"
+                ]
+            },
+            {
+                "question": "How do you act when you're under a lot of stress?",
+                "options": [
+                    "I stay cool and focused",
+                    "I feel tense but act",
+                    "I get angry or upset",
+                    "I can’t function properly"
+                ]
+            },
+            {
+                "question": "Do you avoid stressful situations?",
+                "options": [
+                    "No, I face them",
+                    "Only when it’s too much",
+                    "Yes, usually",
+                    "Always, I can't handle stress"
+                ]
+            },
+            {
+                "question": "Do you take breaks when feeling stressed?",
+                "options": [
+                    "Yes, regularly",
+                    "Sometimes",
+                    "Rarely",
+                    "No, I just keep going"
+                ]
+            },
+            {
+                "question": "How would you rate your stress resistance overall?",
+                "options": [
+                    "Very strong",
+                    "Good enough",
+                    "Weak",
+                    "Very low"
+                ]
+            }
+        ]
+    },
+    "test_finish_button": "Finish Test"
+}

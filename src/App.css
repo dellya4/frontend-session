@@ -1,0 +1,399 @@
+:root {
+    --bg-main: #ffffff;
+    --bg-secondary: #f8f8f8;
+    --card-bg: #e7e4eaa7;
+    --text-main: #0f1a1f;
+    --text-secondary: #1c1646;
+    --border-color: #E0DEEF;
+    --header-bg: #6a5acd; /* Светлая тема для header */
+    --header-text: #ffffff;
+    --btn-bg: #473f93;
+    --btn-bg-hover: #5b4ec2;
+    --accent-bg: #a39fc0af; /* Для news-card, footer, и других акцентов */
+    --card-accent-bg: #fffff5; /* Для recommendation-card, test-card, и т.д. */
+    --modal-overlay-bg: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для оверлея */
+    --modal-content-bg: rgba(248, 247, 255, 0.9); /* Фон модального окна */
+    --modal-body-bg: #ffffff; /* Фон тела модального окна */
+    --error-text: #ff3333; /* Цвет ошибки */
+    --success-text: #28a745; /* Цвет успеха */
+    --link-color: #007bff; /* Цвет ссылок */
+    --reset-overlay-bg: rgba(0, 0, 0, 0.6); /* Фон контейнера сброса пароля */
+    --reset-content-bg: rgba(255, 255, 255, 0.95); /* Фон контента сброса пароля */
+}
+
+:root[data-theme='dark'] {
+    --bg-main: #1f1f2f;
+    --bg-secondary: #36304a;
+    --card-bg: #2a2a3f;
+    --text-main: #c7c7c7;
+    --text-secondary: #d0cee4;
+    --border-color: #7a71aa;
+    --header-bg: #473f93; /* Темная тема для header */
+    --header-text: #ffffff;
+    --btn-bg: #5b4ec2;
+    --btn-bg-hover: #4a3d9d;
+    --accent-bg: #5d4fc53d; /* Темный акцент для news-card, footer */
+    --card-accent-bg: #3a3a5a; /* Темный фон для карточек */
+    --card-accent-bg: #3a3a5a;
+    --test-bg: #1f1f30;
+    --modal-overlay-bg: rgba(0, 0, 0, 0.7); /* Более тёмный оверлей в темной теме */
+    --modal-content-bg: rgba(42, 42, 63, 0.9); /* Тёмный полупрозрачный фон модального окна */
+    --modal-body-bg: #2a2a3f; /* Тёмный фон тела модального окна */
+    --error-text: #ff6666; /* Более светлый красный для темной темы */
+    --success-text: #55cc77; /* Более светлый зелёный для темной темы */
+    --link-color: #66b0ff;
+    --reset-overlay-bg: rgba(0, 0, 0, 0.8); /* Более тёмный оверлей в темной теме */
+    --reset-content-bg: rgba(42, 42, 63, 0.975); /* Тёмный фон контента */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: auto;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+p {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.app {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+}
+
+/* Common Page Styles */
+.page-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.page-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  color: var(--text-main);
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.primary-btn {
+  background-color: var(--btn-bg);
+  color: var(--header-text);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #5b4ec2;
+  transform: translateY(-2px);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  color: #4a3d9d;
+  font-size: 16px;
+  padding: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.page-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  color: #473f93;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a3d9d;
+  margin-bottom: 3px;
+}
+
+.form-group input {
+  width: 95%;
+  font-size: 16px;
+  font-family: monospace;
+  color: #0f1a1f;
+  background-color: #f8f8f8;
+  border: 2px solid #E0DEEF;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4a3d9d;
+  box-shadow: 0 0 5px rgba(74, 61, 157, 0.3);
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.primary-btn {
+  /* width: 100%; */
+  background-color: slateblue;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #5b4ec2;
+  transform: translateY(-2px);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+}
+
+.message {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #e3f9e5;
+  color: #2e7d32;
+}
+
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Profile Page Specific Styles */
+.profile-card {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  max-height: 580px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #E0DEEF;
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}
+
+.avatar-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-input {
+  display: none;
+}
+
+.upload-btn {
+  background-color: #6c757d;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.upload-btn:hover {
+  background-color: #5a6268;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a3d9d;
+  /* margin-bottom: 3px; */
+}
+
+.form-group input {
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--text-secondary);
+  box-shadow: 0 0 5px rgba(74, 61, 157, 0.3);
+}
+
+.form-group input[readOnly] {
+  background-color: #e9ecef4e;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #E0DEEF;
+  margin: 30px 0;
+}
+
+.theme-btn {
+  background-color: #6c757d;
+  padding: 12px 30px;
+}
+
+.theme-btn:hover {
+  background-color: #5a6268;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #0f1a1f;
+}
+
+body.dark {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.profile-card,
+.recommendation-card,
+.news-card,
+.achievement-card,
+.test-card {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+}
+
+.profile-card input,
+.form-group input,
+.filters input,
+.filters select {
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.page-title,
+.news-title,
+.achievement-card h3,
+.test-card h3,
+.course-content h3 {
+  color: var(--btn-bg);
+}
+
+.banner {
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
+}
+
+#header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: 15px;
+}
+
+.navigation a {
+    color: var(--header-text);
+}
+
+
+body.dark {
+  background-color: #1f1f2f;
+  color: white;
+}
+
+body.dark .user-item {
+  background-color: #2a2a3f;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .page-container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .primary-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
