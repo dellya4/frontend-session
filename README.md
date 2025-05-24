@@ -116,3 +116,10 @@ frontend/
 | `/profile`             | ProfilePage      | авторизованные   |
 
 ```
+---
+## Сервер
+
+```
+https://github.com/dellya4/frontend-session-server
+```
+
